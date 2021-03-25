@@ -71,7 +71,9 @@ app.layout = html.Div(
                         "bgColor": "green.700"
                     }
                 ),
-                html.P(id="button-output")
+                html.P(id="button-output"),
+                dxc.Checkbox("Checkbox", id='checkbox', isDisabled=True),
+                html.P(id="checkbox-output")
             ],
             themeExtension=theme,
         )
@@ -83,6 +85,10 @@ app.layout = html.Div(
 def display_output(n_clicks):
     return n_clicks
 
+@app.callback(Output("checkbox-output", "children"), [Input("checkbox", "value")])
+def checkbox_output(is_checked):
+
+    return str(is_checked)
 
 if __name__ == "__main__":
     app.run_server(debug=True)
