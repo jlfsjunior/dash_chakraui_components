@@ -15,7 +15,15 @@
   },
   "author": "José Luiz Ferreira <jlfsjunior@gmail.com>",
   "license": "MIT",
+  "homepage": "https://github.com/jlfsjunior/dash_chakraui_components#readme",
+  "bugs": {
+    "url": "https://github.com/owner/project/issues"
+  },
   "dependencies": {
+    "@chakra-ui/react": "^1.4.1",
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^11.1.5",
+    "framer-motion": "^4.0.3",
     "ramda": "^0.26.1"
   },
   "devDependencies": {
