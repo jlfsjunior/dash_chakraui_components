@@ -8,6 +8,7 @@ const version = "0.0.1"
 include("chakraprovider.jl")
 include("dashchakrauicomponents.jl")
 include("button.jl")
+include("checkbox.jl")
 include("aspectratio.jl")
 include("box.jl")
 include("center.jl")

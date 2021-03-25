@@ -240,6 +240,103 @@
       }
     }
   },
+  "src/lib/components/forms/Checkbox.jsx": {
+    "description": "",
+    "displayName": "Checkbox",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component Id"
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Internal function (DO NOT USE)"
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The children of this component"
+      },
+      "isChecked": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Is checked?"
+      },
+      "isDisabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Is disabled?\nDefaults to false",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "isRequired": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Is checkbox required?\nDefaults to false",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "size": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Checkbox size\nDefaults to 'md'",
+        "defaultValue": {
+          "value": "\"md\"",
+          "computed": false
+        }
+      },
+      "value": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "number"
+            },
+            {
+              "name": "string"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Value to be returned to forms"
+      },
+      "variant": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Checkbox variant\nDefaults to 'solid'"
+      },
+      "styleProps": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "StyleProp object"
+      }
+    }
+  },
   "src/lib/components/layout/AspectRatio.jsx": {
     "description": "Aspect Ratio component",
     "displayName": "AspectRatio",
