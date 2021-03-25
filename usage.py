@@ -1,24 +1,88 @@
-import dash_chakraui_components
+import dash_chakraui_components as dxc
 import dash
 from dash.dependencies import Input, Output
 import dash_html_components as html
 
 app = dash.Dash(__name__)
 
-app.layout = html.Div([
-    dash_chakraui_components.DashChakrauiComponents(
-        id='input',
-        value='my-value',
-        label='my-label'
-    ),
-    html.Div(id='output')
-])
+theme = {
+    "initialColorMode": "dark",
+    "components": {
+        "Container" : {
+            "baseStyle":{
+                "fontWeight": "bold",
+            },
+            "sizes": {
+                "xl": {
+                    "maxW": "10%"
+                }
+            },
+            "variants": {
+                "with-shadow": {
+                    "bg": "red.400",
+                    "boxShadow": "0 0 2px 2px #efdfde",
+                }
+            },
+        },
+        "Button": {
+            "baseStyle": {
+                "textTransform": "uppercase",
+            }
+        }
+    }
+}
+
+app.layout = html.Div(
+    [
+        dxc.DashChakrauiComponents(id="input", value="my-value", label="my-label"),
+        html.Div(id="output"),
+        dxc.ChakraProvider(
+            [
+                dxc.Box(
+                    "Test",
+                    styleProps={
+                        "bgColor": "gray.800",
+                        "color": "white",
+                        "p": 8,
+                    }
+                ),
+                dxc.Square(
+                    "Test",
+                    size="100px",
+                    styleProps={"bg": "red.700"}
+                ),
+                dxc.Circle(
+                    "Test",
+                    size="100px",
+                    styleProps={"bg": "red.400"}
+                ),
+                dxc.Container(
+                    """
+                    Babdasndasndsanddasdadasdsadsadsdsaada adndjosanndk
+                    """,
+                    size="xl",
+                    # variant="with-shadow"
+                ),
+                dxc.Button(
+                    "Test",
+                    id="button",
+                    # isLoading=True, 
+                    styleProps={
+                        "bgColor": "green.700"
+                    }
+                ),
+                html.P(id="button-output")
+            ],
+            themeExtension=theme,
+        )
+    ]
+)
 
 
-@app.callback(Output('output', 'children'), [Input('input', 'value')])
-def display_output(value):
-    return 'You have entered {}'.format(value)
+@app.callback(Output("button-output", "children"), [Input("button", "nClicks")])
+def display_output(n_clicks):
+    return n_clicks
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run_server(debug=True)

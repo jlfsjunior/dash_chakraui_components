@@ -5,7 +5,15 @@ using Dash
 const resources_path = realpath(joinpath( @__DIR__, "..", "deps"))
 const version = "0.0.1"
 
+include("chakraprovider.jl")
 include("dashchakrauicomponents.jl")
+include("button.jl")
+include("aspectratio.jl")
+include("box.jl")
+include("center.jl")
+include("circle.jl")
+include("container.jl")
+include("square.jl")
 
 function __init__()
     DashBase.register_package(

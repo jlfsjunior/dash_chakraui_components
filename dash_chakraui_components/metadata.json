@@ -1,4 +1,40 @@
 {
+  "src/lib/components/ChakraProvider.jsx": {
+    "description": "Chakra UI context provider",
+    "displayName": "ChakraProvider",
+    "methods": [],
+    "props": {
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The children of this component"
+      },
+      "themeExtension": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Object to extend Chakra UI theme",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      },
+      "resetCSS": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Reset CSS inside provider",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      }
+    }
+  },
   "src/lib/components/DashChakrauiComponents.react.js": {
     "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is editable by the user.",
     "displayName": "DashChakrauiComponents",
@@ -31,6 +67,444 @@
         },
         "required": false,
         "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  },
+  "src/lib/components/forms/Button.jsx": {
+    "description": "Button component",
+    "displayName": "Button",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component Id"
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Internal function (DO NOT USE)"
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The children of this component"
+      },
+      "iconSpacing": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Spacing between button icon and label"
+      },
+      "isActive": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Style button as in active state?\nDefaults to false",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "isDisabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Is button disabled?\nDefaults to false",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "isFullWidth": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Display button with 100% width\nDefaults to false",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "isLoading": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Display button in loading state\nDefaults to false",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "textLoading": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Text to display with spinner when loading"
+      },
+      "leftIcon": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Left Icon"
+      },
+      "rightIcon": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Right Icon"
+      },
+      "spinner": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "Spinner"
+      },
+      "size": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Button size\nDefaults to 'md'",
+        "defaultValue": {
+          "value": "\"md\"",
+          "computed": false
+        }
+      },
+      "variant": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Button variant\nDefaults to 'solid'",
+        "defaultValue": {
+          "value": "\"solid\"",
+          "computed": false
+        }
+      },
+      "nClicks": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Click count",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "nClicksTimestamp": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Last click timestamp (Unix)",
+        "defaultValue": {
+          "value": "-1",
+          "computed": false
+        }
+      },
+      "styleProps": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "StyleProp object",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/layout/AspectRatio.jsx": {
+    "description": "Aspect Ratio component",
+    "displayName": "AspectRatio",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component Id"
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The children of this component"
+      },
+      "ratio": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Element ratio"
+      },
+      "styleProps": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "StyleProp object\nUse maxWidth to adjust conent width"
+      }
+    }
+  },
+  "src/lib/components/layout/Box.jsx": {
+    "description": "Box Component",
+    "displayName": "Box",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component Id"
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The children of this component"
+      },
+      "asProp": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Render element as tag",
+        "defaultValue": {
+          "value": "\"div\"",
+          "computed": false
+        }
+      },
+      "styleProps": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "StyleProp object",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/layout/Center.jsx": {
+    "description": "Center component",
+    "displayName": "Center",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component Id"
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The children of this component"
+      },
+      "styleProps": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "StyleProp object",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/layout/Circle.jsx": {
+    "description": "Wrapper for Center component in cicle format",
+    "displayName": "Circle",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component Id"
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The children of this component"
+      },
+      "size": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": true,
+        "description": "Component size"
+      },
+      "styleProps": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "StyleProp object",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/layout/Container.jsx": {
+    "description": "Container Component",
+    "displayName": "Container",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component Id"
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The children of this component"
+      },
+      "centerContent": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Center content",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "colorScheme": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "ColorScheme\nNot implemented in the default theme"
+      },
+      "size": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component size \nNot implemented in the default theme"
+      },
+      "variant": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component variant\nNot implemented in the default theme"
+      },
+      "styleProps": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "StyleProp object",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/layout/Square.jsx": {
+    "description": "Wrapper for Center component in square format",
+    "displayName": "Square",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component Id"
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The children of this component"
+      },
+      "size": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": true,
+        "description": "Component size"
+      },
+      "styleProps": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "StyleProp object",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
       }
     }
   }
