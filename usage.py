@@ -76,7 +76,14 @@ app.layout = html.Div(
                 html.P(id="checkbox-output"),
                 dxc.Input(id='input', placeholder="Enter something", type='password', isInvalid=False),
                 html.P(id='input-output'),
-                dxc.Icon(icon="Whatever")
+                dxc.Icon(icon="AddIcon"),
+                dxc.Flex(
+                    [
+                        dxc.Box(styleProps={"p": 4, "bg": "red.400"}),
+                        dxc.Spacer(),
+                        dxc.Box(styleProps={"p": 4, "bg": "green.400"})
+                    ]
+                )
             ],
             themeExtension=theme,
         )
