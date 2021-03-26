@@ -70,6 +70,60 @@
       }
     }
   },
+  "src/lib/components/Icon.jsx": {
+    "description": "Icon component that render icons from Chakra UI library\nIf 'icon' does not exist in library, Chakra renders the\nfallback Icon (see https://chakra-ui.com/docs/media-and-icons/icon#fallback-icon)\n\nFor a list of icons, see https://chakra-ui.com/docs/media-and-icons/icon#all-icons",
+    "displayName": "Icon",
+    "methods": [],
+    "props": {
+      "icon": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "Chakra UI icon name\nFor a list, refer to the documentation\nhttps://chakra-ui.com/docs/media-and-icons/icon#all-icons"
+      },
+      "viewBox": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Icon viewBox\nDefaults to '0 0 24 24'",
+        "defaultValue": {
+          "value": "\"0 0 24 24\"",
+          "computed": false
+        }
+      },
+      "boxSize": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Icon boxSize\nDefaults to '1em'",
+        "defaultValue": {
+          "value": "\"1em\"",
+          "computed": false
+        }
+      },
+      "color": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Icon color"
+      },
+      "isFocusable": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Is an interactive element or just for presentation",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      }
+    }
+  },
   "src/lib/components/forms/Button.jsx": {
     "description": "Button component",
     "displayName": "Button",
@@ -334,6 +388,92 @@
         },
         "required": false,
         "description": "StyleProp object"
+      }
+    }
+  },
+  "src/lib/components/forms/Input.jsx": {
+    "description": "Text Input component",
+    "displayName": "Input",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component Id"
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Internal function (DO NOT USE)"
+      },
+      "value": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Internal value parameter (DO NOT USE as input)"
+      },
+      "placeholder": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Text placeholder"
+      },
+      "type": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Input type\nDefaults to text",
+        "defaultValue": {
+          "value": "'text'",
+          "computed": false
+        }
+      },
+      "isInvalid": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Is invalid",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "colorScheme": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Color scheme"
+      },
+      "size": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Button size\nDefaults to 'md'",
+        "defaultValue": {
+          "value": "'md'",
+          "computed": false
+        }
+      },
+      "variant": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Input variant \nOptions are 'outline', 'filled', 'flushed' or 'unstyled'\nDefaults to 'outline'",
+        "defaultValue": {
+          "value": "'outline'",
+          "computed": false
+        }
       }
     }
   },

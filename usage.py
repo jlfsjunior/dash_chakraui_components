@@ -34,7 +34,7 @@ theme = {
 
 app.layout = html.Div(
     [
-        dxc.DashChakrauiComponents(id="input", value="my-value", label="my-label"),
+        # dxc.DashChakrauiComponents(id="input", value="my-value", label="my-label"),
         html.Div(id="output"),
         dxc.ChakraProvider(
             [
@@ -73,7 +73,10 @@ app.layout = html.Div(
                 ),
                 html.P(id="button-output"),
                 dxc.Checkbox("Checkbox", id='checkbox', isDisabled=True),
-                html.P(id="checkbox-output")
+                html.P(id="checkbox-output"),
+                dxc.Input(id='input', placeholder="Enter something", type='password', isInvalid=False),
+                html.P(id='input-output'),
+                dxc.Icon(icon="Whatever")
             ],
             themeExtension=theme,
         )
@@ -87,8 +90,13 @@ def display_output(n_clicks):
 
 @app.callback(Output("checkbox-output", "children"), [Input("checkbox", "value")])
 def checkbox_output(is_checked):
-
     return str(is_checked)
+
+
+@app.callback(Output("input-output", "children"), [Input("input", "value")])
+def input_output(value):
+    return value
+
 
 if __name__ == "__main__":
     app.run_server(debug=True)
