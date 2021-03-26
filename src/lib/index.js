@@ -7,6 +7,8 @@ import Center from './components/layout/Center.jsx';
 import Circle from './components/layout/Circle.jsx';
 import Container from './components/layout/Container.jsx';
 import Flex from './components/layout/Flex.jsx';
+import Grid from './components/layout/Grid.jsx';
+import GridItem from './components/layout/GridItem.jsx';
 import Spacer from './components/layout/Spacer.jsx';
 import Square from './components/layout/Square.jsx';
 
@@ -25,6 +27,8 @@ export {
     Circle,
     Container,
     Flex,
+    Grid,
+    GridItem,
     Spacer,
     Square,
     Button,
