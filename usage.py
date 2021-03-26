@@ -121,8 +121,16 @@ app.layout = html.Div(
                 dxc.Heading("Testing the text", asProp="h4"),
                 dxc.Stat(
                     statLabel="Test",
-                    statNumber=dxc.Text("This"),
+                    statNumber=10,
                     statHelpText="10 out of 10",
+                ),
+                dxc.Breadcrumb(
+                    separator="-",
+                    children=[
+                        dxc.BreadcrumbLink("Home"),
+                        dxc.BreadcrumbLink("About"),
+                        dxc.BreadcrumbLink("Us", isCurrentPage=True)
+                    ]
                 )
             ],
             themeExtension=theme,
