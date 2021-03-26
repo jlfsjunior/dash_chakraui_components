@@ -12,6 +12,8 @@ import GridItem from './components/layout/GridItem.jsx';
 import Spacer from './components/layout/Spacer.jsx';
 import Square from './components/layout/Square.jsx';
 import Stack from './components/layout/Stack.jsx';
+import Wrap from './components/layout/Wrap.jsx';
+import WrapItem from './components/layout/WrapItem.jsx';
 
 import Button from './components/forms/Button.jsx';
 import Checkbox from './components/forms/Checkbox.jsx';
@@ -33,6 +35,8 @@ export {
     Spacer,
     Square,
     Stack,
+    Wrap,
+    WrapItem,
     Button,
     Checkbox,
     Input,
