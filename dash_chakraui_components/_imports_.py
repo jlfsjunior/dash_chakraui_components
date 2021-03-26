@@ -18,6 +18,9 @@ from .Square import Square
 from .Stack import Stack
 from .Wrap import Wrap
 from .WrapItem import WrapItem
+from .Breadcrumb import Breadcrumb
+from .BreadcrumbItem import BreadcrumbItem
+from .BreadcrumbLink import BreadcrumbLink
 from .Heading import Heading
 from .Text import Text
 
@@ -42,6 +45,9 @@ __all__ = [
     "Stack",
     "Wrap",
     "WrapItem",
+    "Breadcrumb",
+    "BreadcrumbItem",
+    "BreadcrumbLink",
     "Heading",
     "Text"
 ]

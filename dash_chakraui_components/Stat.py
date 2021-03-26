@@ -5,13 +5,14 @@ from dash.development.base_component import Component, _explicitize_args
 
 class Stat(Component):
     """A Stat component.
+WIP This component is EXPERIMENTAL and might become deprecated.
 Show statistics in a card
 Composes to `Box`, so all its props can be passed via `styleProps`
 
 Keyword arguments:
 - id (string; optional): Component Id
 - statLabel (string; optional): statLabel
-- statNumber (string | number; optional): statNumber
+- statNumber (string | number | dash component; optional): statNumber
 - statHelpText (string; optional): statLabel
 - size (string; default 'md'): Stat component size 
 Defaults to 'md'

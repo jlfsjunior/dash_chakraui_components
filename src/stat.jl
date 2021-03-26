@@ -6,12 +6,13 @@ export stat
     stat(;kwargs...)
 
 A Stat component.
+WIP This component is EXPERIMENTAL and might become deprecated.
 Show statistics in a card
 Composes to `Box`, so all its props can be passed via `styleProps`
 Keyword arguments:
 - `id` (String; optional): Component Id
 - `statLabel` (String; optional): statLabel
-- `statNumber` (String | Real; optional): statNumber
+- `statNumber` (String | Real | dash component; optional): statNumber
 - `statHelpText` (String; optional): statLabel
 - `size` (String; optional): Stat component size 
 Defaults to 'md'

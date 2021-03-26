@@ -132,7 +132,7 @@
     }
   },
   "src/lib/components/data_display/Stat.jsx": {
-    "description": "Show statistics in a card\nComposes to `Box`, so all its props can be passed via `styleProps`",
+    "description": "WIP This component is EXPERIMENTAL and might become deprecated.\nShow statistics in a card\nComposes to `Box`, so all its props can be passed via `styleProps`",
     "displayName": "Stat",
     "methods": [],
     "props": {
@@ -159,6 +159,9 @@
             },
             {
               "name": "number"
+            },
+            {
+              "name": "element"
             }
           ]
         },
@@ -1187,6 +1190,215 @@
         },
         "required": false,
         "description": "The children of this component"
+      },
+      "styleProps": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "StyleProp object",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/navigation/Breadcrumb.jsx": {
+    "description": "Breadcrumbs, or a breadcrumb navigation, can help enhance how users navigate\nto previous page levels of a website, especially if that website has many pages or products.\nComposes to `Box`, so all its props can be passed via `styleProps`",
+    "displayName": "Breadcrumb",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component Id"
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The children of this component"
+      },
+      "separator": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Breadcrumbs separator\nCurrently supports only strings"
+      },
+      "colorScheme": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Color scheme"
+      },
+      "size": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Breadcrumb size\nNot implemented in default theme"
+      },
+      "spacing": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The left and right margin applied to the separator"
+      },
+      "variant": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Breadcrumb variant\nNot implemented in default theme"
+      },
+      "styleProps": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "StyleProp object",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/navigation/BreadcrumbItem.jsx": {
+    "description": "BreadcrumbItem element\nDoes not provide Link",
+    "displayName": "BreadcrumbItem",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component Id"
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The children of this component"
+      },
+      "isCurrentPage": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "When `true`, the BreadcrumbLink renders a span\nwith `aria-current` set to page instead of an anchor element.\nDefaults to false",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "isLastChild": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Is last child?\nDefaults to false",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "spacing": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The left and right margin applied to the separator"
+      },
+      "styleProps": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "StyleProp object",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/navigation/BreadcrumbLink.jsx": {
+    "description": "BreadcrumbLink element\nTo be used as child of Breadcrumb.\nComposes to `Link`, so all its props can be passed via `styleProps`",
+    "displayName": "BreadcrumbLink",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component Id"
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The children of this component"
+      },
+      "href": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Link href"
+      },
+      "isCurrentPage": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "When `true`, the BreadcrumbLink renders a span\nwith `aria-current` set to page instead of an anchor element.\nDefaults to false",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "spacing": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The left and right margin applied to the separator"
       },
       "styleProps": {
         "type": {

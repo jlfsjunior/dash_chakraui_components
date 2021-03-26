@@ -6,7 +6,7 @@
 \title{Stat component}
 
 \description{
-Show statistics in a card Composes to `Box`, so all its props can be passed via `styleProps`
+WIP This component is EXPERIMENTAL and might become deprecated. Show statistics in a card Composes to `Box`, so all its props can be passed via `styleProps`
 }
 
 \usage{
@@ -19,7 +19,7 @@ size=NULL, colorScheme=NULL, variant=NULL, styleProps=NULL)
 
 \item{statLabel}{Character. statLabel}
 
-\item{statNumber}{Character | numeric. statNumber}
+\item{statNumber}{Character | numeric | dash component. statNumber}
 
 \item{statHelpText}{Character. statLabel}
 
