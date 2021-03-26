@@ -10,6 +10,8 @@ from .Center import Center
 from .Circle import Circle
 from .Container import Container
 from .Flex import Flex
+from .Grid import Grid
+from .GridItem import GridItem
 from .Spacer import Spacer
 from .Square import Square
 
@@ -26,6 +28,8 @@ __all__ = [
     "Circle",
     "Container",
     "Flex",
+    "Grid",
+    "GridItem",
     "Spacer",
     "Square"
 ]

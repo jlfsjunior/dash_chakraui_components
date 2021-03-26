@@ -706,7 +706,7 @@
     }
   },
   "src/lib/components/layout/Flex.jsx": {
-    "description": "",
+    "description": "FlexBox component\nAccept other components as children. \nFor shortness, Flex props are passed in an object/dictionary.\n`Flex` composes `Box`, so any styleProps can be passed via `flexProps`\nFor details, see https://chakra-ui.com/docs/layout/flex",
     "displayName": "Flex",
     "methods": [],
     "props": {
@@ -729,7 +729,109 @@
           "name": "object"
         },
         "required": false,
-        "description": "FlexBox properties\nFor a list, refer to https://chakra-ui.com/docs/layout/flex#props"
+        "description": "FlexBox properties (includes styleProps)\nFor a list, refer to https://chakra-ui.com/docs/layout/flex#props"
+      }
+    }
+  },
+  "src/lib/components/layout/Grid.jsx": {
+    "description": "Grid component\nAccept other components or `GridItem` as children. \nFor shortness, Grid props are passed in an object/dictionary.\n`Grid` composes `Box`, so any styleProps can be passed via `gridProps`\nFor details, see https://chakra-ui.com/docs/layout/flex",
+    "displayName": "Grid",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component Id"
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The children of this component"
+      },
+      "gridProps": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Grid properties (includes styleProps)\nFor a list, refer to https://chakra-ui.com/docs/layout/grid#props-1"
+      }
+    }
+  },
+  "src/lib/components/layout/GridItem.jsx": {
+    "description": "GridItem component\nTo be used as child of Grid component\nSee: https://chakra-ui.com/docs/layout/grid#spanning-columns",
+    "displayName": "GridItem",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component Id"
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The children of this component"
+      },
+      "colSpan": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Number of columns that the item should span"
+      },
+      "colStart": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Column number that grid item should start"
+      },
+      "colEnd": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Column number that grid item should end"
+      },
+      "rowSpan": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Number of rows that the item should span"
+      },
+      "rowStart": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Row number that grid item should start"
+      },
+      "rowEnd": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Row number that grid item should end"
+      },
+      "styleProps": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "StyleProp object",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
       }
     }
   },

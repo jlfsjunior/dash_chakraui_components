@@ -9,11 +9,15 @@ export flex
 
 
 A Flex component.
-
+FlexBox component
+Accept other components as children. 
+For shortness, Flex props are passed in an object/dictionary.
+`Flex` composes `Box`, so any styleProps can be passed via `flexProps`
+For details, see https://chakra-ui.com/docs/layout/flex
 Keyword arguments:
 - `children` (a list of or a singular dash component, string or number; optional): The children of this component
 - `id` (String; optional): Component Id
-- `flexProps` (Dict; optional): FlexBox properties
+- `flexProps` (Dict; optional): FlexBox properties (includes styleProps)
 For a list, refer to https://chakra-ui.com/docs/layout/flex#props
 """
 function flex(; kwargs...)
