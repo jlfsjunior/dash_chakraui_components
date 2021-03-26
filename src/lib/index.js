@@ -10,6 +10,9 @@ import Square from './components/layout/Square.jsx';
 
 import Button from './components/forms/Button.jsx';
 import Checkbox from './components/forms/Checkbox.jsx';
+import Input from './components/forms/Input.jsx';
+
+import Icon from './components/Icon.jsx';
 
 export {
     DashChakrauiComponents,
@@ -22,4 +25,6 @@ export {
     Square,
     Button,
     Checkbox,
+    Input,
+    Icon,
 };
