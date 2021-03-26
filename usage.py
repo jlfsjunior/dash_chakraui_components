@@ -127,11 +127,12 @@ app.layout = html.Div(
                 dxc.Breadcrumb(
                     separator="-",
                     children=[
-                        dxc.BreadcrumbLink("Home"),
-                        dxc.BreadcrumbLink("About"),
+                        dxc.BreadcrumbLink("Home", href="/"),
+                        dxc.BreadcrumbLink("About", href="/about"),
                         dxc.BreadcrumbLink("Us", isCurrentPage=True)
                     ]
-                )
+                ),
+                dxc.Link(href="/about", isExternal=True, isRefresh=True)
             ],
             themeExtension=theme,
         )
