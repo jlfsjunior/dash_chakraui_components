@@ -114,7 +114,11 @@ app.layout = html.Div(
                         dxc.Box("Box 1", styleProps={"p": 4, "w": "400px", "bg": "red.400"}),
                         dxc.Box("Box 2", styleProps={"p": 4, "w": "400px", "bg": "green.400"})
                     ]
-                )
+                ),
+                dxc.Text("Testing the text"),
+                dxc.Text("Testing the text", fontSize='xl'),
+                dxc.Heading("Testing the text"),
+                dxc.Heading("Testing the text", asProp="h4"),
             ],
             themeExtension=theme,
         )
