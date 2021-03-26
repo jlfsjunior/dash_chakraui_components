@@ -20,7 +20,16 @@ const GridItem = ({
     styleProps,
 }) => {
     return (
-        <ChGridItem {...omit(['children', 'styleProps'])} {...styleProps}>
+        <ChGridItem
+            id={id}
+            colSpan={colSpan}
+            colStart={colStart}
+            colEnd={colEnd}
+            rowSpan={rowSpan}
+            rowStart={rowStart}
+            rowEnd={rowEnd}
+            {...styleProps}
+        >
             {children}
         </ChGridItem>
     );
@@ -28,7 +37,7 @@ const GridItem = ({
 
 GridItem.defaultProps = {
     styleProps: {},
-}
+};
 
 GridItem.propTypes = {
     /**
@@ -72,8 +81,8 @@ GridItem.propTypes = {
     rowEnd: PropTypes.number,
 
     /**
-    * StyleProp object
-    */
+     * StyleProp object
+     */
     styleProps: PropTypes.object,
 };
 
