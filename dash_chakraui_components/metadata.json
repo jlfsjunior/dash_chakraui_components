@@ -131,6 +131,81 @@
       }
     }
   },
+  "src/lib/components/data_display/Stat.jsx": {
+    "description": "Show statistics in a card\nComposes to `Box`, so all its props can be passed via `styleProps`",
+    "displayName": "Stat",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component Id"
+      },
+      "statLabel": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "statLabel"
+      },
+      "statNumber": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "statNumber"
+      },
+      "statHelpText": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "statLabel"
+      },
+      "size": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Stat component size \nDefaults to 'md'",
+        "defaultValue": {
+          "value": "'md'",
+          "computed": false
+        }
+      },
+      "colorScheme": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "ColorScheme"
+      },
+      "variant": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Stat variant"
+      },
+      "styleProps": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "StyleProp object"
+      }
+    }
+  },
   "src/lib/components/forms/Button.jsx": {
     "description": "Button component",
     "displayName": "Button",
