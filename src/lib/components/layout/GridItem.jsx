@@ -6,7 +6,7 @@ import {GridItem as ChGridItem} from '@chakra-ui/react';
 /**
  * GridItem component
  * To be used as child of Grid component
- * See: https://chakra-ui.com/docs/layout/grid#spanning-columns 
+ * See: https://chakra-ui.com/docs/layout/grid#spanning-columns
  */
 const GridItem = ({
     id,
@@ -17,9 +17,18 @@ const GridItem = ({
     rowSpan,
     rowStart,
     rowEnd,
+    styleProps,
 }) => {
-    return <ChGridItem {...omit(['children'])}>{children}</ChGridItem>;
+    return (
+        <ChGridItem {...omit(['children', 'styleProps'])} {...styleProps}>
+            {children}
+        </ChGridItem>
+    );
 };
+
+GridItem.defaultProps = {
+    styleProps: {},
+}
 
 GridItem.propTypes = {
     /**
@@ -32,7 +41,7 @@ GridItem.propTypes = {
      */
     children: PropTypes.node,
 
-    /** 
+    /**
      * Number of columns that the item should span
      */
     colSpan: PropTypes.number,
@@ -47,7 +56,7 @@ GridItem.propTypes = {
      */
     colEnd: PropTypes.number,
 
-    /** 
+    /**
      * Number of rows that the item should span
      */
     rowSpan: PropTypes.number,
@@ -62,6 +71,10 @@ GridItem.propTypes = {
      */
     rowEnd: PropTypes.number,
 
+    /**
+    * StyleProp object
+    */
+    styleProps: PropTypes.object,
 };
 
 export default GridItem;
