@@ -895,5 +895,235 @@
         }
       }
     }
+  },
+  "src/lib/components/layout/Stack.jsx": {
+    "description": "Stack component\nImplements VStack and HStack (via `direction` prop)",
+    "displayName": "Stack",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component Id"
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The children of this component"
+      },
+      "align": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Shorthand for `alignItems` style prop"
+      },
+      "direction": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "string"
+              }
+            }
+          ]
+        },
+        "required": false,
+        "description": "The direction to stack the items\nDefaults to 'column'",
+        "defaultValue": {
+          "value": "'column'",
+          "computed": false
+        }
+      },
+      "isInline": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "If `true` the items will be stacked horizontally\nDefaults to false",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "justify": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Shorthand for `justifyContent` style prop"
+      },
+      "shouldWrapChildren": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If `true`, the children will be wrapped in a `Box` with `display: inline-block`, \nand the `Box` will take the spacing props\nDefaults to false",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "spacing": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "number"
+            },
+            {
+              "name": "string"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The space between each stack item"
+      },
+      "wrap": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Shorthand for `flexWrap` style prop"
+      },
+      "styleProps": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "StyleProp object",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/layout/Wrap.jsx": {
+    "description": "Wrap is a layout component that adds a defined space between its children. \nIt wraps its children automatically if there isn't enough space to fit any more in the same row.\nThink of it as a smarter flex-wrap with spacing support. \nIt works really well with things like dialog buttons, tags, and chips.",
+    "displayName": "Wrap",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component Id"
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The children of this component"
+      },
+      "align": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Shorthand for `alignItems` style prop"
+      },
+      "direction": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "string"
+              }
+            }
+          ]
+        },
+        "required": false,
+        "description": "The `flex-direction` value"
+      },
+      "justify": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The `justify-content` value (for cross-axis alignment)"
+      },
+      "shouldWrapChildren": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If `true`, the children will be wrapped in a `WrapItem`"
+      },
+      "spacing": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "number"
+            },
+            {
+              "name": "string"
+            }
+          ]
+        },
+        "required": false,
+        "description": "The space between the each child (even if it wraps)"
+      },
+      "styleProps": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "StyleProp object",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/layout/WrapItem.jsx": {
+    "description": "WrapItem component\nTo be used as child of `Wrap` component (if `shouldWrapChildren` is `false`)\nComposes to `Box`, so all its props can be passed via `styleProps`",
+    "displayName": "WrapItem",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component Id"
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The children of this component"
+      },
+      "styleProps": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "StyleProp object",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      }
+    }
   }
 }

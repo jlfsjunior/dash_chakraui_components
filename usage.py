@@ -66,7 +66,7 @@ app.layout = html.Div(
                 dxc.Button(
                     "Test",
                     id="button",
-                    # isLoading=True, 
+                    # isLoading=True,
                     styleProps={
                         "bgColor": "green.700"
                     }
@@ -99,6 +99,20 @@ app.layout = html.Div(
                         dxc.GridItem(colSpan=2, styleProps={"bg": "papayawhip"}),
                         dxc.GridItem(colSpan=2, styleProps={"bg": "papayawhip"}),
                         dxc.GridItem(colSpan=4, styleProps={"bg": "tomato"})
+                    ]
+                ),
+                dxc.Stack(
+                    spacing=12,
+                    direction="column-reverse",
+                    children=[
+                        dxc.Box("Box 1", styleProps={"p": 4, "bg": "red.400"}),
+                        dxc.Box("Box 2", styleProps={"p": 4, "bg": "green.400"})
+                    ]
+                ),
+                dxc.Wrap(
+                    children=[
+                        dxc.Box("Box 1", styleProps={"p": 4, "w": "400px", "bg": "red.400"}),
+                        dxc.Box("Box 2", styleProps={"p": 4, "w": "400px", "bg": "green.400"})
                     ]
                 )
             ],

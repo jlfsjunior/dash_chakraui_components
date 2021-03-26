@@ -21,6 +21,9 @@ include("grid.jl")
 include("griditem.jl")
 include("spacer.jl")
 include("square.jl")
+include("stack.jl")
+include("wrap.jl")
+include("wrapitem.jl")
 
 function __init__()
     DashBase.register_package(

@@ -14,6 +14,9 @@ from .Grid import Grid
 from .GridItem import GridItem
 from .Spacer import Spacer
 from .Square import Square
+from .Stack import Stack
+from .Wrap import Wrap
+from .WrapItem import WrapItem
 
 __all__ = [
     "ChakraProvider",
@@ -31,5 +34,8 @@ __all__ = [
     "Grid",
     "GridItem",
     "Spacer",
-    "Square"
+    "Square",
+    "Stack",
+    "Wrap",
+    "WrapItem"
 ]
