@@ -27,6 +27,7 @@ import Text from './components/typography/Text.jsx';
 import Breadcrumb from './components/navigation/Breadcrumb.jsx';
 import BreadcrumbItem from './components/navigation/BreadcrumbItem.jsx';
 import BreadcrumbLink from './components/navigation/BreadcrumbLink.jsx';
+import Link from './components/navigation/Link.jsx';
 
 import Icon from './components/Icon.jsx';
 
@@ -55,5 +56,6 @@ export {
     Breadcrumb,
     BreadcrumbItem,
     BreadcrumbLink,
+    Link,
     Icon,
 };
