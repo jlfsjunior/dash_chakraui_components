@@ -17,6 +17,8 @@ from .Square import Square
 from .Stack import Stack
 from .Wrap import Wrap
 from .WrapItem import WrapItem
+from .Heading import Heading
+from .Text import Text
 
 __all__ = [
     "ChakraProvider",
@@ -37,5 +39,7 @@ __all__ = [
     "Square",
     "Stack",
     "Wrap",
-    "WrapItem"
+    "WrapItem",
+    "Heading",
+    "Text"
 ]

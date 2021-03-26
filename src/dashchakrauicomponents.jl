@@ -24,6 +24,8 @@ include("square.jl")
 include("stack.jl")
 include("wrap.jl")
 include("wrapitem.jl")
+include("heading.jl")
+include("text.jl")
 
 function __init__()
     DashBase.register_package(

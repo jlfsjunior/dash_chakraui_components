@@ -1125,5 +1125,192 @@
         }
       }
     }
+  },
+  "src/lib/components/typography/Heading.jsx": {
+    "description": "Text component is the used to render text and paragraphs within an interface. \nIt renders a <h2> tag by default.\nComposes to `Box`, so all its props can be passed via `styleProps`\nHeading differs from Text in fontWeight (bold)",
+    "displayName": "Heading",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component Id"
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The children of this component"
+      },
+      "asProp": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Render element as tag\nDefaults to 'p'",
+        "defaultValue": {
+          "value": "\"h2\"",
+          "computed": false
+        }
+      },
+      "fontSize": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Font size \nSupport T-shirt, CSS or number definitions\nDefaults to 'md'"
+      },
+      "isTruncated": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If `true`, it render an ellipsis when the heading exceeds the width \nof the viewport or maxWidth prop.\nDefaults to `false`",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "colorScheme": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "ColorScheme"
+      },
+      "variant": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Text variant"
+      },
+      "styleProps": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "StyleProp object",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/typography/Text.jsx": {
+    "description": "Text component is the used to render text and paragraphs within an interface. \nIt renders a <p> tag by default.\nComposes to `Box`, so all its props can be passed via `styleProps`",
+    "displayName": "Text",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component Id"
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The children of this component"
+      },
+      "asProp": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Render element as tag\nDefaults to 'p'",
+        "defaultValue": {
+          "value": "\"p\"",
+          "computed": false
+        }
+      },
+      "fontSize": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Font size \nSupport T-shirt, CSS or number definitions\nDefaults to 'md'"
+      },
+      "isTruncated": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If `true`, it render an ellipsis when the heading exceeds the width \nof the viewport or maxWidth prop.\nDefaults to `false`",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "align": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The CSS `text-align` property"
+      },
+      "casing": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The CSS `text-transform` property"
+      },
+      "colorScheme": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "ColorScheme"
+      },
+      "decoration": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The CSS `text-decoration` property"
+      },
+      "variant": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Text variant"
+      },
+      "styleProps": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "StyleProp object",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      }
+    }
   }
 }
