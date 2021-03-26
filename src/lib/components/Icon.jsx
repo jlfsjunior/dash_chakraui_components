@@ -10,9 +10,9 @@ import * as icons from '@chakra-ui/icons';
  * 
  * For a list of icons, see https://chakra-ui.com/docs/media-and-icons/icon#all-icons
  */
-const Icon = ({ icon, viewBox, boxSize, color, isFocusable }) => {
+const Icon = ({ id, icon, viewBox, boxSize, color, isFocusable }) => {
     return(
-        <ChIcon as={icons[icon]} viewBox={viewBox} boxSize={boxSize} color={color} focusable={isFocusable} />
+        <ChIcon id={id} as={icons[icon]} viewBox={viewBox} boxSize={boxSize} color={color} focusable={isFocusable} />
     )
 }
 
@@ -23,6 +23,11 @@ Icon.defaultProps = {
 }
 
 Icon.propTypes = {
+    /**
+    * Component Id
+    */
+    id: PropTypes.string,
+
     /**
      * Chakra UI icon name
      * For a list, refer to the documentation
