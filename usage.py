@@ -78,10 +78,27 @@ app.layout = html.Div(
                 html.P(id='input-output'),
                 dxc.Icon(icon="AddIcon"),
                 dxc.Flex(
-                    [
+                    flexProps={
+                        "justify": "center",
+                    },
+                    children=[
                         dxc.Box(styleProps={"p": 4, "bg": "red.400"}),
                         dxc.Spacer(),
                         dxc.Box(styleProps={"p": 4, "bg": "green.400"})
+                    ]
+                ),
+                dxc.Grid(
+                    gridProps={
+                        "h": "300px",
+                        "templateRows": "repeat(2, 1fr)",
+                        "templateColumns": "repeat(5, 1fr)",
+                        "gap": 4
+                    },
+                    children=[
+                        dxc.GridItem(rowSpan=2, colSpan=1, styleProps={"bg": "tomato"}),
+                        dxc.GridItem(colSpan=2, styleProps={"bg": "papayawhip"}),
+                        dxc.GridItem(colSpan=2, styleProps={"bg": "papayawhip"}),
+                        dxc.GridItem(colSpan=4, styleProps={"bg": "tomato"})
                     ]
                 )
             ],
