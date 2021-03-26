@@ -21,6 +21,7 @@ from .WrapItem import WrapItem
 from .Breadcrumb import Breadcrumb
 from .BreadcrumbItem import BreadcrumbItem
 from .BreadcrumbLink import BreadcrumbLink
+from .Link import Link
 from .Heading import Heading
 from .Text import Text
 
@@ -48,6 +49,7 @@ __all__ = [
     "Breadcrumb",
     "BreadcrumbItem",
     "BreadcrumbLink",
+    "Link",
     "Heading",
     "Text"
 ]

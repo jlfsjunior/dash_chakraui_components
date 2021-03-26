@@ -28,6 +28,7 @@ include("wrapitem.jl")
 include("breadcrumb.jl")
 include("breadcrumbitem.jl")
 include("breadcrumblink.jl")
+include("link.jl")
 include("heading.jl")
 include("text.jl")
 

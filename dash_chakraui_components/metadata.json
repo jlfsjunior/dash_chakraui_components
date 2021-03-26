@@ -1024,7 +1024,7 @@
       },
       "isInline": {
         "type": {
-          "name": "string"
+          "name": "bool"
         },
         "required": false,
         "description": "If `true` the items will be stacked horizontally\nDefaults to false",
@@ -1410,6 +1410,70 @@
           "value": "{}",
           "computed": false
         }
+      }
+    }
+  },
+  "src/lib/components/navigation/Link.jsx": {
+    "description": "Link to navigate inside app or to external webpages",
+    "displayName": "Link",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component Id"
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The children of this component"
+      },
+      "href": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The URL of a linked resource."
+      },
+      "isExternal": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If `true`, link opens in a new tab\nDefaults to false",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "isRefresh": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If `true`, page will be refreshed\nDefaults to false\nDummy if isExternal is true",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "size": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Link size\nNot implemented in default theme"
+      },
+      "variant": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Link variant\nNot implemented in default theme"
       }
     }
   },

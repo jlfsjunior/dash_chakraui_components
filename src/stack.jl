@@ -17,7 +17,7 @@ Keyword arguments:
 - `align` (String; optional): Shorthand for `alignItems` style prop
 - `direction` (String | Array of Strings; optional): The direction to stack the items
 Defaults to 'column'
-- `isInline` (String; optional): If `true` the items will be stacked horizontally
+- `isInline` (Bool; optional): If `true` the items will be stacked horizontally
 Defaults to false
 - `justify` (String; optional): Shorthand for `justifyContent` style prop
 - `shouldWrapChildren` (Bool; optional): If `true`, the children will be wrapped in a `Box` with `display: inline-block`, 

@@ -25,7 +25,7 @@ spacing=NULL, wrap=NULL, styleProps=NULL)
 \item{direction}{Character | list of characters. The direction to stack the items
 Defaults to 'column'}
 
-\item{isInline}{Character. If `true` the items will be stacked horizontally
+\item{isInline}{Logical. If `true` the items will be stacked horizontally
 Defaults to false}
 
 \item{justify}{Character. Shorthand for `justifyContent` style prop}
