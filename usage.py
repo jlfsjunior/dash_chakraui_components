@@ -119,6 +119,11 @@ app.layout = html.Div(
                 dxc.Text("Testing the text", fontSize='xl'),
                 dxc.Heading("Testing the text"),
                 dxc.Heading("Testing the text", asProp="h4"),
+                dxc.Stat(
+                    statLabel="Test",
+                    statNumber=dxc.Text("This"),
+                    statHelpText="10 out of 10",
+                )
             ],
             themeExtension=theme,
         )
