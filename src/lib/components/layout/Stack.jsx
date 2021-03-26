@@ -71,7 +71,7 @@ Stack.propTypes = {
      * If `true` the items will be stacked horizontally
      * Defaults to false
      */
-    isInline: PropTypes.string,
+    isInline: PropTypes.bool,
 
     /**
      * Shorthand for `justifyContent` style prop
