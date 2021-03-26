@@ -24,6 +24,10 @@ import Stat from './components/data_display/Stat.jsx';
 import Heading from './components/typography/Heading.jsx';
 import Text from './components/typography/Text.jsx';
 
+import Breadcrumb from './components/navigation/Breadcrumb.jsx';
+import BreadcrumbItem from './components/navigation/BreadcrumbItem.jsx';
+import BreadcrumbLink from './components/navigation/BreadcrumbLink.jsx';
+
 import Icon from './components/Icon.jsx';
 
 export {
@@ -48,5 +52,8 @@ export {
     Stat,
     Heading,
     Text,
+    Breadcrumb,
+    BreadcrumbItem,
+    BreadcrumbLink,
     Icon,
 };
