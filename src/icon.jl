@@ -12,6 +12,7 @@ fallback Icon (see https://chakra-ui.com/docs/media-and-icons/icon#fallback-icon
 
 For a list of icons, see https://chakra-ui.com/docs/media-and-icons/icon#all-icons
 Keyword arguments:
+- `id` (String; optional): Component Id
 - `icon` (String; required): Chakra UI icon name
 For a list, refer to the documentation
 https://chakra-ui.com/docs/media-and-icons/icon#all-icons
@@ -23,7 +24,7 @@ Defaults to '1em'
 - `isFocusable` (Bool; optional): Is an interactive element or just for presentation
 """
 function icon(; kwargs...)
-        available_props = Symbol[:icon, :viewBox, :boxSize, :color, :isFocusable]
+        available_props = Symbol[:id, :icon, :viewBox, :boxSize, :color, :isFocusable]
         wild_props = Symbol[]
         return Component("icon", "Icon", "dash_chakraui_components", available_props, wild_props; kwargs...)
 end

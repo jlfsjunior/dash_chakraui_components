@@ -9,6 +9,8 @@ from .Box import Box
 from .Center import Center
 from .Circle import Circle
 from .Container import Container
+from .Flex import Flex
+from .Spacer import Spacer
 from .Square import Square
 
 __all__ = [
@@ -23,5 +25,7 @@ __all__ = [
     "Center",
     "Circle",
     "Container",
+    "Flex",
+    "Spacer",
     "Square"
 ]

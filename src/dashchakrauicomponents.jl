@@ -16,6 +16,8 @@ include("box.jl")
 include("center.jl")
 include("circle.jl")
 include("container.jl")
+include("flex.jl")
+include("spacer.jl")
 include("square.jl")
 
 function __init__()

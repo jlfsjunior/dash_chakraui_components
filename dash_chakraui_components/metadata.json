@@ -75,6 +75,13 @@
     "displayName": "Icon",
     "methods": [],
     "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component Id"
+      },
       "icon": {
         "type": {
           "name": "string"
@@ -695,6 +702,48 @@
           "value": "{}",
           "computed": false
         }
+      }
+    }
+  },
+  "src/lib/components/layout/Flex.jsx": {
+    "description": "",
+    "displayName": "Flex",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component Id"
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The children of this component"
+      },
+      "flexProps": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "FlexBox properties\nFor a list, refer to https://chakra-ui.com/docs/layout/flex#props"
+      }
+    }
+  },
+  "src/lib/components/layout/Spacer.jsx": {
+    "description": "Spacer component\nTo be used as Flex child \nSee https://chakra-ui.com/docs/layout/flex#using-the-spacer",
+    "displayName": "Spacer",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component Id (dummy)"
       }
     }
   },

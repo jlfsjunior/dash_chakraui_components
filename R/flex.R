@@ -1,16 +1,16 @@
 # AUTO GENERATED FILE - DO NOT EDIT
 
-icon <- function(id=NULL, icon=NULL, viewBox=NULL, boxSize=NULL, color=NULL, isFocusable=NULL) {
+flex <- function(children=NULL, id=NULL, flexProps=NULL) {
     
-    props <- list(id=id, icon=icon, viewBox=viewBox, boxSize=boxSize, color=color, isFocusable=isFocusable)
+    props <- list(children=children, id=id, flexProps=flexProps)
     if (length(props) > 0) {
         props <- props[!vapply(props, is.null, logical(1))]
     }
     component <- list(
         props = props,
-        type = 'Icon',
+        type = 'Flex',
         namespace = 'dash_chakraui_components',
-        propNames = c('id', 'icon', 'viewBox', 'boxSize', 'color', 'isFocusable'),
+        propNames = c('children', 'id', 'flexProps'),
         package = 'dashChakrauiComponents'
         )
 

@@ -10,11 +10,13 @@ Icon component that render icons from Chakra UI library If 'icon' does not exist
 }
 
 \usage{
-icon(icon=NULL, viewBox=NULL, boxSize=NULL, color=NULL,
+icon(id=NULL, icon=NULL, viewBox=NULL, boxSize=NULL, color=NULL,
 isFocusable=NULL)
 }
 
 \arguments{
+\item{id}{Character. Component Id}
+
 \item{icon}{Character. Chakra UI icon name
 For a list, refer to the documentation
 https://chakra-ui.com/docs/media-and-icons/icon#all-icons}
