@@ -1,7 +1,13 @@
 import PropTypes from 'prop-types';
 
-import { Flex as ChFlex, Spacer } from "@chakra-ui/react";
+import { Flex as ChFlex } from "@chakra-ui/react";
 
+/**
+ * FlexBox component
+ * Accept other components as children. 
+ * For shortness, Flex props are passed in an object/dictionary.
+ * For details, see https://chakra-ui.com/docs/layout/flex 
+ */
 const Flex = ({ id, children, flexProps }) => {
     return(
         <ChFlex id={id} {...flexProps}>
