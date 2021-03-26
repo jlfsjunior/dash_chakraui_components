@@ -1,6 +1,6 @@
 {
   "name": "dash_chakraui_components",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Chakra UI components for Dash",
   "main": "build/index.js",
   "scripts": {
@@ -17,7 +17,7 @@
   "license": "MIT",
   "homepage": "https://github.com/jlfsjunior/dash_chakraui_components#readme",
   "bugs": {
-    "url": "https://github.com/owner/project/issues"
+    "url": "https://github.com/jlfsjunior/dash_chakraui_components/issues"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.0.7",
