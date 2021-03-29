@@ -132,7 +132,12 @@ app.layout = html.Div(
                         dxc.BreadcrumbLink("Us", isCurrentPage=True)
                     ]
                 ),
-                dxc.Link(href="/about", isExternal=True, isRefresh=True)
+                dxc.Link(href="/about", isExternal=True, isRefresh=True),
+                dxc.Code(
+                    """
+                    console.log(test)
+                    """
+                )
             ],
             themeExtension=theme,
         )
