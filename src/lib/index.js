@@ -19,6 +19,7 @@ import Button from './components/forms/Button.jsx';
 import Checkbox from './components/forms/Checkbox.jsx';
 import Input from './components/forms/Input.jsx';
 
+import Code from './components/data_display/Code.jsx';
 import Stat from './components/data_display/Stat.jsx';
 
 import Heading from './components/typography/Heading.jsx';
@@ -50,6 +51,7 @@ export {
     Button,
     Checkbox,
     Input,
+    Code,
     Stat,
     Heading,
     Text,
