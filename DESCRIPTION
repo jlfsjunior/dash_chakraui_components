@@ -1,6 +1,6 @@
 Package: dashChakrauiComponents
 Title: Chakra UI components for Dash
-Version: 0.0.2
+Version: 0.0.3
 Description: Chakra UI components for Dash
 Depends: R (>= 3.0.2)
 Imports: 

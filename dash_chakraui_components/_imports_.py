@@ -1,6 +1,7 @@
 from .ChakraProvider import ChakraProvider
 from .DashChakrauiComponents import DashChakrauiComponents
 from .Icon import Icon
+from .Code import Code
 from .Stat import Stat
 from .Button import Button
 from .Checkbox import Checkbox
@@ -29,6 +30,7 @@ __all__ = [
     "ChakraProvider",
     "DashChakrauiComponents",
     "Icon",
+    "Code",
     "Stat",
     "Button",
     "Checkbox",

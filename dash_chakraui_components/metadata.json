@@ -131,6 +131,63 @@
       }
     }
   },
+  "src/lib/components/data_display/Code.jsx": {
+    "description": "Code component",
+    "displayName": "Code",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component Id"
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The children of this component"
+      },
+      "colorScheme": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "ColorScheme\nDefaults to 'gray'",
+        "defaultValue": {
+          "value": "'gray'",
+          "computed": false
+        }
+      },
+      "size": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Code component size"
+      },
+      "variant": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Code variant\nDefaults to 'subtle'",
+        "defaultValue": {
+          "value": "'subtle'",
+          "computed": false
+        }
+      },
+      "styleProps": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "StyleProp object"
+      }
+    }
+  },
   "src/lib/components/data_display/Stat.jsx": {
     "description": "WIP This component is EXPERIMENTAL and might become deprecated.\nShow statistics in a card\nComposes to `Box`, so all its props can be passed via `styleProps`",
     "displayName": "Stat",
