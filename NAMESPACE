@@ -1,7 +1,6 @@
 # AUTO GENERATED FILE - DO NOT EDIT
 
 export(ChakraProvider)
-export(DashChakrauiComponents)
 export(Icon)
 export(Code)
 export(Stat)

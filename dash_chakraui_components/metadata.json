@@ -35,41 +35,6 @@
       }
     }
   },
-  "src/lib/components/DashChakrauiComponents.react.js": {
-    "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is editable by the user.",
-    "displayName": "DashChakrauiComponents",
-    "methods": [],
-    "props": {
-      "id": {
-        "type": {
-          "name": "string"
-        },
-        "required": false,
-        "description": "The ID used to identify this component in Dash callbacks."
-      },
-      "label": {
-        "type": {
-          "name": "string"
-        },
-        "required": true,
-        "description": "A label that will be printed when this component is rendered."
-      },
-      "value": {
-        "type": {
-          "name": "string"
-        },
-        "required": false,
-        "description": "The value displayed in the input."
-      },
-      "setProps": {
-        "type": {
-          "name": "func"
-        },
-        "required": false,
-        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
-      }
-    }
-  },
   "src/lib/components/Icon.jsx": {
     "description": "Icon component that render icons from Chakra UI library\nIf 'icon' does not exist in library, Chakra renders the\nfallback Icon (see https://chakra-ui.com/docs/media-and-icons/icon#fallback-icon)\n\nFor a list of icons, see https://chakra-ui.com/docs/media-and-icons/icon#all-icons",
     "displayName": "Icon",

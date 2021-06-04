@@ -6,7 +6,6 @@ const resources_path = realpath(joinpath( @__DIR__, "..", "deps"))
 const version = "0.0.4"
 
 include("chakraprovider.jl")
-include("dashchakrauicomponents.jl")
 include("icon.jl")
 include("code.jl")
 include("stat.jl")

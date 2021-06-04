@@ -1,5 +1,4 @@
 from .ChakraProvider import ChakraProvider
-from .DashChakrauiComponents import DashChakrauiComponents
 from .Icon import Icon
 from .Code import Code
 from .Stat import Stat
@@ -28,7 +27,6 @@ from .Text import Text
 
 __all__ = [
     "ChakraProvider",
-    "DashChakrauiComponents",
     "Icon",
     "Code",
     "Stat",
