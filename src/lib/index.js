@@ -1,5 +1,4 @@
 /* eslint-disable import/prefer-default-export */
-import DashChakrauiComponents from './components/DashChakrauiComponents.react';
 import ChakraProvider from './components/ChakraProvider.jsx';
 import AspectRatio from './components/layout/AspectRatio.jsx';
 import Box from './components/layout/Box.jsx';
@@ -33,7 +32,6 @@ import Link from './components/navigation/Link.jsx';
 import Icon from './components/Icon.jsx';
 
 export {
-    DashChakrauiComponents,
     ChakraProvider,
     AspectRatio,
     Box,
