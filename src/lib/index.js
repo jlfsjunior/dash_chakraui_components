@@ -18,6 +18,7 @@ import Button from './components/forms/Button.jsx';
 import Checkbox from './components/forms/Checkbox.jsx';
 import Input from './components/forms/Input.jsx';
 import Textarea from './components/forms/Textarea.jsx';
+import Switch from './components/forms/Switch.jsx';
 
 import Code from './components/data_display/Code.jsx';
 import Stat from './components/data_display/Stat.jsx';
@@ -51,6 +52,7 @@ export {
     Checkbox,
     Input,
     Textarea,
+    Switch,
     Code,
     Stat,
     Heading,
