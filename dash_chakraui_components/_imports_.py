@@ -5,6 +5,7 @@ from .Stat import Stat
 from .Button import Button
 from .Checkbox import Checkbox
 from .Input import Input
+from .Textarea import Textarea
 from .AspectRatio import AspectRatio
 from .Box import Box
 from .Center import Center
@@ -33,6 +34,7 @@ __all__ = [
     "Button",
     "Checkbox",
     "Input",
+    "Textarea",
     "AspectRatio",
     "Box",
     "Center",
