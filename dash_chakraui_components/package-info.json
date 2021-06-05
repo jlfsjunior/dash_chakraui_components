@@ -1,6 +1,6 @@
 {
   "name": "dash_chakraui_components",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Chakra UI components for Dash",
   "main": "build/index.js",
   "scripts": {
