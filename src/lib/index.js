@@ -20,6 +20,7 @@ import FormControl from './components/forms/FormControl.jsx';
 import Input from './components/forms/Input.jsx';
 import Textarea from './components/forms/Textarea.jsx';
 import Select from './components/forms/Select.jsx';
+import Slider from './components/forms/Slider.jsx';
 import Switch from './components/forms/Switch.jsx';
 
 import Code from './components/data_display/Code.jsx';
@@ -56,6 +57,7 @@ export {
     Input,
     Textarea,
     Select,
+    Slider,
     Switch,
     Code,
     Stat,
