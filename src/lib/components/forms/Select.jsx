@@ -12,6 +12,9 @@ const Select = ({
     options,
     value,
     placeholder,
+    isInvalid,
+    isDisabled,
+    isRequired,
     size,
     variant,
     colorScheme,
@@ -21,23 +24,30 @@ const Select = ({
             id={id}
             defaultValue={value}
             placeholder={placeholder}
+            isInvalid={isInvalid}
+            isDisabled={isDisabled}
+            isRequired={isRequired}
             size={size}
             variant={variant}
             colorScheme={colorScheme}
             onChange={(event) => setProps({value: event.target.value})}
         >
             {options.map((option, idx) => {
-                return(
+                return (
                     <option key={idx} value={option.value || option}>
                         {option.label || option}
                     </option>
-                )
+                );
             })}
         </ChSelect>
     );
 };
 
-Select.defaultProps = {};
+Select.defaultProps = {
+    isInvalid: false,
+    isDisabled: false,
+    isRequired: false,
+};
 
 Select.propTypes = {
     /**
@@ -64,6 +74,21 @@ Select.propTypes = {
      * no option is selected
      */
     placeholder: PropTypes.string,
+
+    /**
+     * Is the component invalid?
+     */
+    isInvalid: PropTypes.bool,
+
+    /**
+     * Is the component disabled?
+     */
+    isDisabled: PropTypes.bool,
+
+    /**
+     * Is the component required?
+     */
+    isRequired: PropTypes.bool,
 
     /**
      * Component size
