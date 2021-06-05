@@ -16,8 +16,12 @@ import WrapItem from './components/layout/WrapItem.jsx';
 
 import Button from './components/forms/Button.jsx';
 import Checkbox from './components/forms/Checkbox.jsx';
+import FormControl from './components/forms/FormControl.jsx';
 import Input from './components/forms/Input.jsx';
 import Textarea from './components/forms/Textarea.jsx';
+import Select from './components/forms/Select.jsx';
+import Slider from './components/forms/Slider.jsx';
+import Switch from './components/forms/Switch.jsx';
 
 import Code from './components/data_display/Code.jsx';
 import Stat from './components/data_display/Stat.jsx';
@@ -49,8 +53,12 @@ export {
     WrapItem,
     Button,
     Checkbox,
+    FormControl,
     Input,
     Textarea,
+    Select,
+    Slider,
+    Switch,
     Code,
     Stat,
     Heading,

@@ -4,7 +4,11 @@ from .Code import Code
 from .Stat import Stat
 from .Button import Button
 from .Checkbox import Checkbox
+from .FormControl import FormControl
 from .Input import Input
+from .Select import Select
+from .Slider import Slider
+from .Switch import Switch
 from .Textarea import Textarea
 from .AspectRatio import AspectRatio
 from .Box import Box
@@ -33,7 +37,11 @@ __all__ = [
     "Stat",
     "Button",
     "Checkbox",
+    "FormControl",
     "Input",
+    "Select",
+    "Slider",
+    "Switch",
     "Textarea",
     "AspectRatio",
     "Box",

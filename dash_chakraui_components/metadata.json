@@ -498,6 +498,69 @@
       }
     }
   },
+  "src/lib/components/forms/FormControl.jsx": {
+    "description": "",
+    "displayName": "FormControl",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component Id"
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The children of this component"
+      },
+      "label": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Label"
+      },
+      "helperText": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Helper text"
+      },
+      "isRequired": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Is this form component required?"
+      },
+      "size": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component size"
+      },
+      "variant": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component variant"
+      },
+      "styleProps": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "StyleProps"
+      }
+    }
+  },
   "src/lib/components/forms/Input.jsx": {
     "description": "Text Input component",
     "displayName": "Input",
@@ -581,6 +644,328 @@
           "value": "'outline'",
           "computed": false
         }
+      }
+    }
+  },
+  "src/lib/components/forms/Select.jsx": {
+    "description": "Select component",
+    "displayName": "Select",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component Id"
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Internal function (DO NOT USE)"
+      },
+      "options": {
+        "type": {
+          "name": "array"
+        },
+        "required": true,
+        "description": "Options"
+      },
+      "value": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Selected value"
+      },
+      "placeholder": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Text placeholder when\nno option is selected"
+      },
+      "isInvalid": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Is the component invalid?",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "isDisabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Is the component disabled?",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "isRequired": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Is the component required?",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "size": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component size"
+      },
+      "variant": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component variant"
+      },
+      "colorScheme": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Color Scheme"
+      }
+    }
+  },
+  "src/lib/components/forms/Slider.jsx": {
+    "description": "Slider component",
+    "displayName": "Slider",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component Id"
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Internal function (DO NOT USE)"
+      },
+      "value": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Selected value"
+      },
+      "min": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Minimum value"
+      },
+      "max": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Maximum value"
+      },
+      "step": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Step value"
+      },
+      "isInvalid": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Is the component invalid?",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "isDisabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Is the component disabled?",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "isRequired": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Is the component required?",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "orientation": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component orientation",
+        "defaultValue": {
+          "value": "\"horizontal\"",
+          "computed": false
+        }
+      },
+      "size": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component size"
+      },
+      "variant": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component variant"
+      },
+      "colorScheme": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Color Scheme"
+      },
+      "styleProps": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "StyleProps",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      }
+    }
+  },
+  "src/lib/components/forms/Switch.jsx": {
+    "description": "",
+    "displayName": "Switch",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component Id"
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Internal function (DO NOT USE)"
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The children of this component"
+      },
+      "isChecked": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Is checked?",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "isDisabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Is disabled?\nDefaults to false",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "isRequired": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Is checkbox required?\nDefaults to false",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "size": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Switch size\nDefaults to 'md'",
+        "defaultValue": {
+          "value": "\"md\"",
+          "computed": false
+        }
+      },
+      "value": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "number"
+            },
+            {
+              "name": "string"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Value to be returned to forms"
+      },
+      "variant": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Switch variant\nDefaults to 'solid'"
+      },
+      "styleProps": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "StyleProp object"
       }
     }
   },
