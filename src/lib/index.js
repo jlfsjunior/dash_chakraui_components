@@ -17,6 +17,7 @@ import WrapItem from './components/layout/WrapItem.jsx';
 import Button from './components/forms/Button.jsx';
 import Checkbox from './components/forms/Checkbox.jsx';
 import Input from './components/forms/Input.jsx';
+import Textarea from './components/forms/Textarea.jsx';
 
 import Code from './components/data_display/Code.jsx';
 import Stat from './components/data_display/Stat.jsx';
@@ -49,6 +50,7 @@ export {
     Button,
     Checkbox,
     Input,
+    Textarea,
     Code,
     Stat,
     Heading,
