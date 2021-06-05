@@ -1,3 +1,4 @@
+from logging import PlaceHolder
 import dash_chakraui_components as dxc
 import dash
 from dash.dependencies import Input, Output
@@ -32,12 +33,25 @@ theme = {
     }
 }
 
-app.layout = html.Div(
+app.layout = dxc.Box(
     [
         # dxc.DashChakrauiComponents(id="input", value="my-value", label="my-label"),
         html.Div(id="output"),
         dxc.ChakraProvider(
             [
+                dxc.Box(
+                    [
+                        dxc.Textarea(
+                            id="textarea",
+                            placeholder="Enter some text...",
+                            isInvalid=False,
+                            isDisabled=False,
+                            variant="filled",
+                            size="sm"
+                        ),
+                        dxc.Text(id="textarea-output")
+                    ]
+                ),
                 dxc.Box(
                     "Test",
                     styleProps={
@@ -158,6 +172,22 @@ def checkbox_output(is_checked):
 def input_output(value):
     return value
 
+
+@app.callback(
+    [
+        Output("textarea-output", "children"),
+        Output("textarea", "isInvalid"),
+    ],
+    Input("textarea", "value")
+)
+def update_textarea(text):
+    if text is None:
+        return "No text entered", False
+
+    if len(text) < 10:
+        return "Please write more!", True
+
+    return text, False
 
 if __name__ == "__main__":
     app.run_server(debug=True)

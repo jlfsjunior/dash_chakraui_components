@@ -584,6 +584,92 @@
       }
     }
   },
+  "src/lib/components/forms/Textarea.jsx": {
+    "description": "Text Textarea component",
+    "displayName": "Textarea",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Component Id"
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Internal function (DO NOT USE)"
+      },
+      "value": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Internal value parameter (DO NOT USE as input)"
+      },
+      "placeholder": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Text placeholder"
+      },
+      "isDisabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Is disabled",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "isInvalid": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Is invalid",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "colorScheme": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Color scheme"
+      },
+      "size": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Textarea size\nDefaults to 'md'",
+        "defaultValue": {
+          "value": "'md'",
+          "computed": false
+        }
+      },
+      "variant": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Textarea variant\nOptions are 'outline', 'filled', 'flushed' or 'unstyled'\nDefaults to 'outline'",
+        "defaultValue": {
+          "value": "'outline'",
+          "computed": false
+        }
+      }
+    }
+  },
   "src/lib/components/layout/AspectRatio.jsx": {
     "description": "Aspect Ratio component",
     "displayName": "AspectRatio",
