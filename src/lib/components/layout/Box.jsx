@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Box as ChBox } from "@chakra-ui/react";
