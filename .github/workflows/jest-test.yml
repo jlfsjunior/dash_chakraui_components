@@ -3,11 +3,9 @@ name: Jest Unit test
 on:
   push: 
     branches: [ master, 'feat/**', 'feature/**' ]
-  pull_request:
-    branches: [ master ]
 
 jobs:
-  build: 
+  test-unit: 
     runs-on: ubuntu-latest
 
     steps: 
@@ -21,4 +19,4 @@ jobs:
           npm install
       - name: Run Jest
         run: |
-          jest
+          npm run jest
