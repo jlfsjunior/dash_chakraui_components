@@ -1,0 +1,24 @@
+name: Jest Unit test
+
+on:
+  push: 
+    branches: [ master, 'feat/**', 'feature/**' ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build: 
+    runs-on: ubuntu-latest
+
+    steps: 
+      - uses: actions/checkout@v2
+      - name: Set up node
+        uses: actions/setup-node@v2
+        with:
+          node-version: "10"
+      - name: Instal node dependencies
+        run: |
+          npm install
+      - name: Run Jest
+        run: |
+          jest
