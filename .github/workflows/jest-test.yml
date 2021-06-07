@@ -19,4 +19,4 @@ jobs:
           npm install
       - name: Run Jest
         run: |
-          npm run jest
+          npm run test:unit
