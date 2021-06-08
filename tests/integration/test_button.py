@@ -18,7 +18,7 @@ def test_button001_click_trigger(dash_duo):
     def update(n_clicks):
         return n_clicks
     
-    dash_duo.multiple_clicks("#button", 1)
+    dash_duo.multiple_click("#button", 1)
 
     assert dash_duo.wait_for_text_to_equal("#output", "1"), "click button once should return text = 1"
 
