@@ -17,6 +17,8 @@ def test_button001_click_trigger(dash_duo):
     )
     def update(n_clicks):
         return n_clicks
+
+    dash_duo.start_server(app)
     
     dash_duo.multiple_click("#button", 1)
 
