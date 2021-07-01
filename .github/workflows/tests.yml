@@ -20,6 +20,7 @@ jobs:
           python-version: '3.x'
       - name: Install python libraries
         run: |
+          pip install virtualenv
           virtualenv venv
           source venv/bin/activate
           pip install -r requirements.txt
