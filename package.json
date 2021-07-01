@@ -13,7 +13,7 @@
     "build": "npm run build:js && npm run build:backends",
     "build:activated": "npm run build:js && npm run build:backends-activated",
     "test:unit": "jest",
-    "test:integration": "./tests/venv-test/bin/activate && pytest",
+    "test:integration": "source ./tests/venv-test/bin/activate && pytest",
     "test": "npm run test:unit && npm run test:integration"
   },
   "author": "José Luiz Ferreira <jlfsjunior@gmail.com>",
