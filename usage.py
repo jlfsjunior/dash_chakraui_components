@@ -29,7 +29,7 @@ theme = {
     },
 }
 
-app.layout = dxc.Box(
+app_layout = dxc.Box(
     [
         # dxc.DashChakrauiComponents(id="input", value="my-value", label="my-label"),
         html.Div(id="output"),
@@ -207,6 +207,36 @@ app.layout = dxc.Box(
         ),
     ]
 )
+
+app.layout = dxc.ChakraProvider(children=[
+    dxc.Grid(
+        [
+            dxc.GridItem(
+                rowSpan=2,
+                colSpan=1,
+                styleProps={'bg': "tomato"}, 
+            ),
+            dxc.GridItem(
+                colSpan=2,
+                styleProps={'bg': "papayawhip"}, 
+            ),
+            dxc.GridItem(
+                colSpan=2,
+                styleProps={'bg': "papayawhip"}, 
+            ),
+            dxc.GridItem(
+                colSpan=4,
+                styleProps={'bg': "tomato"}, 
+            ),
+        ],
+        gridProps={
+            'h': '200px',
+            'templateRows': "repeat(2, 1fr)",
+            'templateColumns': "repeat(5, 1fr)",
+            'gap': 4,
+        }
+    ),
+])
 
 
 @app.callback(Output("button-output", "children"), [Input("button", "nClicks")])

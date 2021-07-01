@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import {omit} from 'ramda';
 
 import {GridItem as ChGridItem} from '@chakra-ui/react';
 
