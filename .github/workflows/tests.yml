@@ -14,7 +14,16 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: "10"
-      - name: Instal node dependencies
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - name: Install python libraries
+        run: |
+          virtualenv venv
+          source venv/bin/activate
+          pip install -r requirements.txt
+      - name: Install node dependencies
         run: |
           npm install
       - name: Build package
